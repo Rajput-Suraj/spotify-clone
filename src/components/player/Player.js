@@ -1,9 +1,13 @@
 import React from "react";
+import Sidebar from "../sidebar/Sidebar";
+import "./Player.css";
 
-const Player = () => {
+const Player = ({ spotify }) => {
     return (
-        <div>
-            <h1>Welcome to Spotify</h1>
+        <div className="player">
+            <div className="player__body">
+                <Sidebar />
+            </div>
         </div>
     );
 };
