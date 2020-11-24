@@ -40,6 +40,8 @@ function App() {
         }
     }, [dispatch, token]);
 
+    console.log("My Token", token);
+
     return (
         <div className="app">
             {token ? <Player spotify={spotify} /> : <Login />}
