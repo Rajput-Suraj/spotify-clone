@@ -9,11 +9,16 @@
     width: 100%;
 }
 
+.login > .logo {
+    width: 50% !important;
+    height: 50% !important;
+}
+
 .login > a {
     padding: 20px;
     border-radius: 99px;
     background-color: #1db954;
-    font-weight: 800;
+    font-weight: 400;
     color: white;
     text-decoration: none;
 }

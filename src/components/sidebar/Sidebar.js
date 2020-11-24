@@ -1,4 +1,5 @@
 import React from "react";
+import { ReactComponent as Logo } from "../../pages/Login/spotifyLogo.svg";
 import "./Sidebar.css";
 
 import SidebarOption from "../sidebar-options/SidebarOption";
@@ -11,11 +12,12 @@ const Sidebar = () => {
     const [{ playlists }, dispathch] = useDataLayervalue();
     return (
         <div className="sidebar">
-            <img
+            {/* <img
                 className="sidebar__logo"
                 src="https://getheavy.com/wp-content/uploads/2019/12/spotify2019-830x350.jpg"
                 alt="Logo"
-            />
+            /> */}
+            <Logo className="sidebar__logo" />
             <SidebarOption title="Home" Icon={HomeIcon} />
             <SidebarOption title="Search" Icon={SearchIcon} />
             <SidebarOption title="Your Library" Icon={LibraryMusicIcon} />
