@@ -22,7 +22,6 @@ function App() {
                 type: "SET_TOKEN",
                 token: _token,
             });
-            localStorage.setItem("User", _token);
             spotify.setAccessToken(_token);
             spotify.getMe().then((user) => {
                 dispatch({
